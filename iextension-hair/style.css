@@ -1,0 +1,41 @@
+/*
+Theme Name: iExtension Hair
+Theme URI: https://example.com/iextension-hair
+Author: You
+Author URI: https://example.com
+Description: A clean, modern WordPress theme for hair extension shops and booking.
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: iextension-hair
+*/
+
+
+:root{
+    --accent:#b565a7; /* soft magenta */
+    --muted:#666;
+    --bg:#fff;
+    --card:#fbfbfb;
+    --radius:12px;
+    }
+    
+    
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;color:var(--muted);background:var(--bg);margin:0}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1200px;margin:0 auto;padding:1rem}
+    .header{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+    .site-title{font-size:1.5rem;font-weight:700;color:#222}
+    .nav{display:flex;gap:1rem}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center;padding:2.5rem 0}
+    .hero .eyebrow{font-weight:600;color:var(--accent);text-transform:uppercase}
+    .hero h1{font-size:2.35rem;margin:.25rem 0;color:#111}
+    .card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+    .product{border-radius:10px;overflow:hidden}
+    .product img{width:100%;display:block}
+    .product .meta{padding:.75rem}
+    .footer{border-top:1px solid #eee;padding:1.25rem 0;margin-top:2rem;color:#888}
+    
+    
+    /* Responsive */
+    @media (max-width:880px){.hero{grid-template-columns:1fr;height:auto}.nav{display:none}}
